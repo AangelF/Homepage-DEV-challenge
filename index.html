@@ -6,17 +6,106 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/style.css">
     <title>Tennis Homepage</title>
-    <link rel="shortcut icon" href="images/Group.svg" type="image/x-icon">
+    <link rel="shortcut icon" href="images/svg/logo.svg" type="image/x-icon">
 </head>
+
 <body>
+    <!--Primera parte de la pagina web que corresponde al manu, logotipo y bienvenida a comprar-->
     <header>
-        <nav></nav>
+        <p>Envío Gratis En Todo México</p>
+        <nav>
+            <a href="#">
+                Productos
+                <img src="images/svg/vector-down-arrow.svg" alt="Flecha de despliegue">
+            </a>
+            <img src="images/svg/logo.svg" alt="Logotipo de la tienda de Tennis">
+            <a href="#">Contacto</a>
+        </nav>
+        <section class="header-text">
+            <h1>EL MEJOR DEPORTE</h1>
+            <h2>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h2>
+
+            <!--Primer boton de comprar-->
+            <button class="comprar-button">COMPRAR AHORA</button>
+        </section>
     </header>
 
+    <!--Esta parte es el main donde se encuntran los productos, categorias de los productos y la invitacion a comprar-->
     <main>
+        <!--Esta primera seccion corresponde a los productos acomodados es carrusel, que en total hay 3 productos-->
+        <section class="products">
+            <!--Boton de navegacion a la izquierda del carrusel de productos-->
+            <button class="button-left">
+                <img src="images/svg/vector-left-right-arrow.svg" alt="Flecha de movimiento a la izquierda">
+            </button>
+            <!--Agrupacion de los productos para el carrusel-->
+            <div class="articles-product">
+                <article class="product">
+                    <img src="images/products/extraDutyBalls/extraDutyBalls@3x.jpg" alt="Paquete de 3 pelotas de tenis Wilson Championship Extra Duty" class="product-img">
+                    <div class="product-text">
+                        <h4>Wilson Championship Extra Duty Tennis Balls, 3-pk</h4>
+                    </div>
+                    <div class="product-price">
+                        <span>$22.09</span>
+                    </div>
+                </article>
+                <article class="product">
+                    <img src="images/products/starterBalls/starterBalls@3x.jpg" alt="Paquete de 3 pelotas de tenis Wilson Starter" class="product-img">
+                    <div class="product-text">
+                        <h4>Wilson Starter 3 Balls</h4>
+                    </div>
+                    <div class="product-price">
+                        <span>$24.69</span>
+                    </div>
+                </article>
+                <article class="product">
+                    <img src="images/products/racquet/racquet@3x.jpg" alt="Raqueta de tenis Wilson Tour Slam Lite" class="product-img">
+                    <div class="product-text">
+                        <h4>Wilson Tour Slam Lite Tennis Racquet</h4>
+                    </div>
+                    <div class="product-price">
+                        <span>$24.95</span>
+                    </div>
+                </article>
+            </div>
+            <!--Boton de navegacion a la derecha del carrusel de productos-->
+            <button class="button-right">
+                <img src="images/svg/vector-left-right-arrow.svg" alt="Flecha de movimiento a la derecha">
+            </button>
+            <!--Boton para ver todos los productos-->
+            <button class="comprar-button">VER TODOS</button>
+        </section>
+
+        <!--Esta segunda seccion corresponde a al apartado de categorias, total de categorias 3-->
+        <section class="categories">
+            <div class="categorie">
+                <p>RAQUETAS</p>
+            </div>
+            <div class="categorie">
+                <p>PELOTAS</p>
+            </div>
+            <div class="categorie">
+                <p>ACCESORIOS</p>
+            </div>
+        </section>
+
+        <!--Esta tercera seccion es donde se le invita al consumidor a comprar-->
+        <section class="compra-ahora">
+            <p>DESCUBRE TU PASION</p>
+            <!--Segundo boton de comprar-->
+            <button class="comprar-button">COMPRAR AHORA</button>
+        </section>
     </main>
 
+    <!--Esta es la parte final de la pagina, el footer en el cual estan las redes sociales y la informacion legal-->
     <footer>
+        <div class="footer-social-networks">
+            <img src="images/svg/instagram.svg" alt="Link a nuestra paginas de Instagram">
+            <img src="images/svg/facebook.svg" alt="Link a nuestra pagina de Facebook">
+        </div>
+        <img src="images/svg/footerBall.svg" alt="Imagen decorativa" class="footer-decoration">
+        <p class="footer-copyright-text">© DEV. All Rights Reserved. Privacy Policy, Terms & Conditions</p>
     </footer>
+
 </body>
 </html>
