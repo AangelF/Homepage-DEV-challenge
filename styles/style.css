@@ -1,0 +1,111 @@
+/*Declaracion para el uso de la fuente Apercu*/
+@font-face {
+    font-family: 'Apercu';
+    src: url('../fonts/Apercu.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+
+/*Declaracion de las variables para los colores*/
+:root {
+    --white: rgb(255,255,255);
+    --sand: rgb(207 224 98);
+    --murkyGreen: rgb(111 126 13);
+    --brownishOrange: rgb(217 99 33);
+    --lightOrange: rgb(232, 151, 103);
+}
+
+/*Estilos globales*/
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Apercu';
+}
+
+.contenedor{
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+
+/*header*/
+header{
+    width: 100%;
+    height: 626pt;
+    background-image: url('../images/background/background@3x.jpg');
+    background-size: cover;
+}
+header p{
+    padding: 7pt;
+    text-align: center;
+    color: var(--murkyGreen);
+    background-color: var(--sand);
+}
+
+/*Estilos de la barra de navegacion*/
+nav{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 29pt;
+    margin-left: 71pt;
+    margin-right: 123pt;
+    
+}
+nav > a{
+    color: --white;
+    text-decoration: none;
+    font-weight: normal;
+}
+nav > a:visited{
+    color: var(--white);
+}
+nav > a:hover{
+    color: var(--white);
+    text-decoration: underline;
+}
+
+/*Estilos del texto del header*/
+.center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 86pt;
+}
+h1{
+    text-align: center;
+    color: var(--white);
+    font-weight: bold;
+    font-size: 71pt;
+}
+h3{
+    text-align: center;
+    color: var(--white);
+    font-weight: bold;
+    font-size: 21pt;
+    width: 467pt;
+    margin: 30pt 0 30pt 0;
+}
+
+/*Estilos del boton*/
+.comprar-button{
+    background-color: var(--brownishOrange);
+    color: var(--white);
+    border: none;
+    text-decoration: none;
+    text-align: center;
+    font-size: 13pt;
+    font-weight: bold;
+    width: 261pt;
+    height: 40pt;
+    border-radius: 30pt;
+}
+.comprar-button:hover{
+    cursor: pointer;
+    background-color: var(--lightOrange);
+}

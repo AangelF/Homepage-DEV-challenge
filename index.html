@@ -12,7 +12,7 @@
 <body>
     <!--Primera parte de la pagina web que corresponde al manu, logotipo y bienvenida a comprar-->
     <header>
-        <p>Envío Gratis En Todo México</p>
+        <p><strong>Envío Gratis En Todo México</strong></p>
         <nav>
             <a href="#">
                 Productos
@@ -22,18 +22,20 @@
             <a href="#">Contacto</a>
         </nav>
         <section class="header-text">
-            <h1>EL MEJOR DEPORTE</h1>
-            <h2>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h2>
+            <div class="center">
+                <h1>EL MEJOR DEPORTE</h1>
+                <h3>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h3>
 
-            <!--Primer boton de comprar-->
-            <button class="comprar-button">COMPRAR AHORA</button>
+                <!--Primer boton de comprar-->
+                <button class="comprar-button">COMPRAR AHORA</button>
+            </div>
         </section>
     </header>
 
     <!--Esta parte es el main donde se encuntran los productos, categorias de los productos y la invitacion a comprar-->
     <main>
         <!--Esta primera seccion corresponde a los productos acomodados es carrusel, que en total hay 3 productos-->
-        <section class="products">
+        <section class="contenedor products">
             <!--Boton de navegacion a la izquierda del carrusel de productos-->
             <button class="button-left">
                 <img src="images/svg/vector-left-right-arrow.svg" alt="Flecha de movimiento a la izquierda">
@@ -77,20 +79,23 @@
         </section>
 
         <!--Esta segunda seccion corresponde a al apartado de categorias, total de categorias 3-->
-        <section class="categories">
+        <section class="contenedor categories">
             <div class="categorie">
+                <img src="images/categories/racquets/racquets@3x.jpg" alt="">
                 <p>RAQUETAS</p>
             </div>
             <div class="categorie">
+                <img src="images/categories/balls/balls@3x.jpg" alt="">
                 <p>PELOTAS</p>
             </div>
             <div class="categorie">
+                <img src="images/categories/accesories/accesories@3x.jpg" alt="">
                 <p>ACCESORIOS</p>
             </div>
         </section>
 
         <!--Esta tercera seccion es donde se le invita al consumidor a comprar-->
-        <section class="compra-ahora">
+        <section class="contenedor compra-ahora">
             <p>DESCUBRE TU PASION</p>
             <!--Segundo boton de comprar-->
             <button class="comprar-button">COMPRAR AHORA</button>
@@ -99,12 +104,14 @@
 
     <!--Esta es la parte final de la pagina, el footer en el cual estan las redes sociales y la informacion legal-->
     <footer>
-        <div class="footer-social-networks">
-            <img src="images/svg/instagram.svg" alt="Link a nuestra paginas de Instagram">
-            <img src="images/svg/facebook.svg" alt="Link a nuestra pagina de Facebook">
+        <div class="contenedor-footer">
+            <div class="footer-social-networks">
+                <img src="images/svg/instagram.svg" alt="Link a nuestra paginas de Instagram">
+                <img src="images/svg/facebook.svg" alt="Link a nuestra pagina de Facebook">
+            </div>
+            <img src="images/svg/footerBall.svg" alt="Imagen decorativa" class="footer-decoration">
+            <p class="footer-copyright-text">© DEV. All Rights Reserved. Privacy Policy, Terms & Conditions</p>
         </div>
-        <img src="images/svg/footerBall.svg" alt="Imagen decorativa" class="footer-decoration">
-        <p class="footer-copyright-text">© DEV. All Rights Reserved. Privacy Policy, Terms & Conditions</p>
     </footer>
 
 </body>
