@@ -37,7 +37,7 @@
         <!--Esta primera seccion corresponde a los productos acomodados es carrusel, que en total hay 3 productos-->
         <section class="contenedor products">
             <!--Boton de navegacion a la izquierda del carrusel de productos-->
-            <button class="button-left">
+            <button class="buttons-navigation">
                 <img src="images/svg/vector-left-right-arrow.svg" alt="Flecha de movimiento a la izquierda">
             </button>
             <!--Agrupacion de los productos para el carrusel-->
@@ -71,7 +71,7 @@
                 </article>
             </div>
             <!--Boton de navegacion a la derecha del carrusel de productos-->
-            <button class="button-right">
+            <button class="buttons-navigation transform">
                 <img src="images/svg/vector-left-right-arrow.svg" alt="Flecha de movimiento a la derecha">
             </button>
             <!--Boton para ver todos los productos-->
@@ -79,24 +79,22 @@
         </section>
 
         <!--Esta segunda seccion corresponde a al apartado de categorias, total de categorias 3-->
-        <section class="contenedor categories">
+        <section class="categories">
             <div class="categorie">
-                <img src="images/categories/racquets/racquets@3x.jpg" alt="">
-                <p>RAQUETAS</p>
+                <p class="raquetas text">RAQUETAS</p>
             </div>
             <div class="categorie">
-                <img src="images/categories/balls/balls@3x.jpg" alt="">
-                <p>PELOTAS</p>
+                <p class="pelotas text">PELOTAS</p>
             </div>
             <div class="categorie">
-                <img src="images/categories/accesories/accesories@3x.jpg" alt="">
-                <p>ACCESORIOS</p>
+                <p class="accesorios text">ACCESORIOS</p>
             </div>
         </section>
 
         <!--Esta tercera seccion es donde se le invita al consumidor a comprar-->
-        <section class="contenedor compra-ahora">
-            <p>DESCUBRE TU PASION</p>
+        <section class="compra-ahora">
+            <!--<img src="images/background2/background2@3x.jpg" alt="Cancha de Tennis">-->
+            <p class="text">DESCUBRE TU PASION</p>
             <!--Segundo boton de comprar-->
             <button class="comprar-button">COMPRAR AHORA</button>
         </section>
@@ -106,11 +104,13 @@
     <footer>
         <div class="contenedor-footer">
             <div class="footer-social-networks">
-                <img src="images/svg/instagram.svg" alt="Link a nuestra paginas de Instagram">
-                <img src="images/svg/facebook.svg" alt="Link a nuestra pagina de Facebook">
+                <div>
+                    <img src="images/svg/instagram.svg" alt="Link a nuestra paginas de Instagram">
+                    <img src="images/svg/facebook.svg" alt="Link a nuestra pagina de Facebook">
+                </div>
+                <p class="footer-copyright-text">© DEV. All Rights Reserved. Privacy Policy, Terms & Conditions</p>
             </div>
             <img src="images/svg/footerBall.svg" alt="Imagen decorativa" class="footer-decoration">
-            <p class="footer-copyright-text">© DEV. All Rights Reserved. Privacy Policy, Terms & Conditions</p>
         </div>
     </footer>
 
