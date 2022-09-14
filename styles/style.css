@@ -57,8 +57,8 @@ nav{
     
 }
 nav > a{
-    color: --white;
-    text-decoration-color: var(--white);
+    color: var(--white);
+    text-decoration: none;
     font-weight: normal;
 }
 nav > a:visited{
@@ -76,6 +76,7 @@ nav > a:hover{
     justify-content: center;
     align-items: center;
     margin-top: 86pt;
+    padding-bottom: 168pt;
 }
 h1{
     text-align: center;
@@ -117,7 +118,7 @@ h3{
     border: none;
     width: 40pt;
     height: 40pt;
-    border-radius: 50%;
+    border-radius: 50pt;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -131,6 +132,50 @@ h3{
     background-color: var(--lightOrange);
 }
 
+/*EStilos de los productos*/
+.articles-product{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.product{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.product > img{
+    width: 305pt;
+    height: 378pt;
+}
+.product-text{
+    width: 230pt;
+    height: 50pt;
+    text-align: center;
+    font-size: 15pt;
+    font-weight: normal;
+    margin-bottom: 5pt;
+}
+.product-price{
+    color: var(--brownishOrange);
+    font-weight: normal;
+    font-size: 13pt;
+    text-align: center;
+}
+.products{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 70pt;
+}
+.button-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 110pt;
+}
+
+
 /*Estilos de las categorias*/
 .categories{
     display: flex;
@@ -143,7 +188,8 @@ h3{
 }
 .categorie > p{
     box-sizing: border-box;
-    padding-top: 100%;
+    padding: 100% 65% 10% 35%;
+
 }
 .categorie > p:hover{
     cursor: pointer;
@@ -176,13 +222,19 @@ h3{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 15% 0 15% 0;
+    padding: 200pt 0 200pt 0;
     background-image: url('../images/background2/background2@3x.jpg');
     background-size: cover;
 }
-
 .compra-ahora > p{
     margin: 10pt;
+}
+
+.compra-ahora > .text{
+    color: var(--white);
+    font-weight: bold;
+    font-size: 71pt;
+    padding-left: 5pt;
 }
 
 /*Estilos del footer*/
@@ -193,6 +245,7 @@ h3{
     justify-content: flex-end;
     align-items: center;
     color: var(--murkyGreen);
+    padding: 25pt;
 }
 .footer-social-networks{
     display: flex;
@@ -201,9 +254,24 @@ h3{
     justify-content: center;
     align-items: center;
 }
+
 .footer-social-networks > div > img{
     margin: 3pt;
+    padding: 5pt;
 }
+.footer-social-networks > div > img:hover{
+    cursor: pointer;
+    opacity: 0.3;
+}
+
 .footer-decoration{
     padding: 15pt 15pt 15pt 0pt;
+}
+
+.footer-copyright-text > a{
+    color: var(--murkyGreen);
+    font-weight: normal;
+}
+.footer-copyright-text > a:visited{
+    color: var(--murkyGreen);
 }
